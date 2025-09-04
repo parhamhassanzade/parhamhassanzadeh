@@ -1,4 +1,3 @@
-import beh from "../../src/assets/images/behland.png"
 import v2ray from "../../src/assets/images/v2ray.webp"
 const INFO = {
 	main: {
