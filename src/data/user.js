@@ -1,10 +1,11 @@
 import v2ray from "../../src/assets/images/v2ray.webp"
+import logo from "../../public/logo.png"
 const INFO = {
 	main: {
 		title: "parham hassanzadeh",
 		name: "parham hassanzadeh",
 		email: "parhamhassanzadeh@gmail.com",
-		logo: "../logo.png",
+		logo: logo,
 	},
 
 	socials: {
