@@ -1,5 +1,5 @@
 import v2ray from "../../src/assets/images/v2ray.webp"
-import logo from "../../public/logo.png"
+import logo from "../assets/images/logo.png"
 const INFO = {
 	main: {
 		title: "parham hassanzadeh",
