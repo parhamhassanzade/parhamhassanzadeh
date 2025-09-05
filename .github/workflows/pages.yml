@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Deploy CRA to GitHub Pages
 
 on:
     push:
@@ -19,15 +19,26 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
+
             - uses: actions/setup-node@v4
               with:
                   node-version: 20
                   cache: npm
+
             - run: npm ci
+
+            # اختیاری ولی توصیه‌شده برای حذف هشدار Browserslist
+            - run: npx update-browserslist-db@latest
+
+            # CRA وقتی CI=true باشد warning ها را error می‌کند؛ این خط مانع fail می‌شود
             - run: npm run build
+              env:
+                  CI: false
+
+            # خروجی CRA در پوشه build است (نه dist)
             - uses: actions/upload-pages-artifact@v3
               with:
-                  path: build # ← فولدر خروجی بیلد (dist/build/out)
+                  path: build
 
     deploy:
         needs: build
