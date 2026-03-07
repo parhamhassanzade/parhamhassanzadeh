@@ -20,15 +20,14 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - uses: actions/configure-pages@v5
+
             - uses: actions/setup-node@v4
               with:
                   node-version: 20
                   cache: npm
 
             - run: npm ci
-
-            # اختیاری ولی توصیه‌شده برای حذف هشدار Browserslist
-            - run: npx update-browserslist-db@latest
 
             # CRA وقتی CI=true باشد warning ها را error می‌کند؛ این خط مانع fail می‌شود
             - run: npm run build
