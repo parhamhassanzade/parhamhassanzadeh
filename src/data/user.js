@@ -5,7 +5,7 @@ const INFO = {
 		title: "Parham Hassanzadeh",
 		name: "Parham Hassanzadeh",
 		email: "parhamhassanzade@gmail.com",
-		phone: "+49 178 2844205",
+		phone: "+491782844205",
 		location: "Furtwangen, Germany",
 		logo: logo,
 	},

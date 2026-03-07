@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
@@ -143,6 +143,13 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faMailBulk}
+									className="homepage-social-icon"
+								/>
+							</a>
+
+							<a href={`tel:${INFO.main.phone}`}>
+								<FontAwesomeIcon
+									icon={faPhone}
 									className="homepage-social-icon"
 								/>
 							</a>
