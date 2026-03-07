@@ -1,46 +1,63 @@
-import v2ray from "../../src/assets/images/v2ray.webp"
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
+
 const INFO = {
 	main: {
-		title: "parham hassanzadeh",
-		name: "parham hassanzadeh",
-		email: "parhamhassanzadeh@gmail.com",
+		title: "Parham Hassanzadeh",
+		name: "Parham Hassanzadeh",
+		email: "parhamhassanzade@gmail.com",
+		phone: "+49 178 2844205",
+		location: "Furtwangen, Germany",
 		logo: logo,
 	},
 
 	socials: {
-
 		github: "https://github.com/parhamhassanzade",
-		linkedin: "https://www.linkedin.com/in/parham-hassanzadeh-176910168/",
-
+		linkedin: "https://www.linkedin.com/in/parham-hassanzadeh/",
 	},
 
 	homepage: {
-		title: "Frontend Developer | MSc AI & Data Science Student | Exploring Machine Learning",
+		title: "M.Sc. AI & Data Science Student | Mid-level Web Developer",
 		description:
-			"I am a Frontend Developer with a strong background in building modern, responsive, and user-friendly web applications. Currently, I am pursuing my Master’s degree in Artificial Intelligence & Data Science, where I am deepening my knowledge of machine learning, data analytics, and intelligent systems.My passion lies at the intersection of software engineering and AI — leveraging my frontend expertise to create seamless user experiences while exploring how data- driven solutions and machine learning models can solve real- world challenges.I enjoy working on projects that combine practical development skills with research and innovation, and I am constantly seeking opportunities to contribute to impactful technologies that shape the future.",
+			"Current M.Sc. Artificial Intelligence & Data Science student with a strong foundation in machine learning, deep learning, and software development. I build practical products with React/Next.js, Django, and data-driven workflows that improve business performance.",
 	},
 
 	about: {
-		title: "I’m parham. I live in Germany, where I design the future.",
+		title: "I'm Parham, based in Germany, building practical AI and web products.",
 		description:
-			"I am a passionate developer with several years of experience working on diverse projects across different domains. My focus has been on building practical, scalable, and user-friendly solutions, many of which I’ve shared as open-source to contribute back to the community. I enjoy exploring new technologies, continuously improving my skills, and collaborating with others to create impactful projects. Always open to feedback and new ideas, I believe in growth through shared knowledge and teamwork.",
+			"I combine full-stack web development experience with graduate-level AI and data science training. My recent work includes building fintech and management platforms, training machine learning models for forecasting and marketing, and implementing BI/data warehouse pipelines on large datasets. I enjoy turning complex data and business needs into clear, scalable solutions.",
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "I write about software engineering, data, and practical machine learning.",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Short notes and lessons from building products, analyzing data, and shipping AI-enabled solutions.",
 	},
 
 	projects: [
 		{
-			title: "V2ray Admin panel",
-			description: "admin panel to manage v2ray server and user, this panel can intract with multiple servers and manage users, traffic, speed and many more.",
-			logo: v2ray,
-			linkText: "View Project",
-			link: "https://back.bt-team.ir",
-		}
+			title: "EU-PARK Analytics Project",
+			description:
+				"Built an XGBoost model for theme park wait-time prediction with +/-1.14 minute error and 94% accuracy, using a pipeline over 130+ Excel files and 2.5 years of operational data.",
+			logo: logo,
+			linkText: "GitHub Profile",
+			link: "https://github.com/parhamhassanzade",
+		},
+		{
+			title: "UK Housing BI & Data Warehouse",
+			description:
+				"Implemented a full BI architecture (PSA, DWH, Data Mart) and star schema for 22M+ housing records, including ETL pipelines, data cleansing, and dimensional modeling in MySQL.",
+			logo: logo,
+			linkText: "GitHub Profile",
+			link: "https://github.com/parhamhassanzade",
+		},
+		{
+			title: "Bitcoin Volatility Analysis (GARCH)",
+			description:
+				"Analyzed BTC-USD volatility with GARCH(1,1), built data pipelines, and interpreted persistence and shock sensitivity to understand crypto market risk behavior.",
+			logo: logo,
+			linkText: "GitHub Profile",
+			link: "https://github.com/parhamhassanzade",
+		},
 	],
 };
 

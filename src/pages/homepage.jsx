@@ -5,6 +5,7 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -13,7 +14,7 @@ import NavBar from "../components/common/navBar";
 // import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
-import parham from "../assets/images/homepage.png"
+import parham from "../assets/images/homepage.jpg"
 import INFO from "../data/user";
 import SEO from "../data/seo";
 // import myArticles from "../data/articles";
@@ -113,7 +114,6 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -125,6 +125,16 @@ const Homepage = () => {
 								/>
 							</a>
 
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
 
 							<a
 								href={`mailto:${INFO.main.email}`}

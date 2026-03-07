@@ -2,36 +2,36 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Parham", "parham", "parham hassanzadeh"],
+			"Parham Hassanzadeh is an M.Sc. AI & Data Science student and mid-level web developer focused on machine learning, data analytics, and scalable web applications.",
+		keywords: ["Parham Hassanzadeh", "AI", "Data Science", "Web Developer"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Parham", "parham", "parham hassanzadeh"],
+			"Background, education, and experience of Parham Hassanzadeh across AI, data science, and full-stack web development.",
+		keywords: ["Parham Hassanzadeh", "Machine Learning", "React", "Django"],
 	},
 
 	{
 		page: "articles",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Parham", "parham", "parham hassanzadeh"],
+			"Notes and articles on software engineering, analytics, and practical machine learning.",
+		keywords: ["Parham Hassanzadeh", "Engineering", "Analytics", "Machine Learning"],
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Parham", "parham", "parham hassanzadeh"],
+			"Selected projects including EU-PARK wait-time prediction, UK housing data warehouse implementation, and Bitcoin volatility analysis.",
+		keywords: ["Parham Hassanzadeh", "Projects", "XGBoost", "Data Warehouse"],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Parham", "parham", "parham hassanzadeh"],
+			"Contact Parham Hassanzadeh for collaboration in AI, data science, or software development projects.",
+		keywords: ["Parham Hassanzadeh", "Contact", "LinkedIn", "GitHub"],
 	},
 ];
 

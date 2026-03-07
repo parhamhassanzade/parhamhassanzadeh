@@ -4,8 +4,8 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Card from "../common/card";
 
 import "./styles/works.css";
-import behLogo from "../../assets/images/behland.png"
-import kian from "../../assets/images/kian.png"
+import behLogo from "../../assets/images/behland.png";
+import kian from "../../assets/images/kian.png";
 
 const Works = () => {
 	return (
@@ -23,9 +23,11 @@ const Works = () => {
 							/>
 							<div className="work-title">Behland</div>
 							<div className="work-subtitle">
-								Software developer
+								Mid-level Web Developer
 							</div>
-							<div className="work-duration">2025 - Present</div>
+							<div className="work-duration">
+								Jan 2024 - Present
+							</div>
 						</div>
 
 						<div className="work">
@@ -36,9 +38,11 @@ const Works = () => {
 							/>
 							<div className="work-title">KaianPol Sepahan </div>
 							<div className="work-subtitle">
-								Software developer
+								Mid-level Web Developer
 							</div>
-							<div className="work-duration">2019 - 2025</div>
+							<div className="work-duration">
+								Jan 2020 - Dec 2023
+							</div>
 						</div>
 					</div>
 				}
