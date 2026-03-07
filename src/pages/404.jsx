@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 
@@ -37,9 +38,9 @@ const Notfound = () => {
 								The requested URL "{window.location.href}" was
 								not found on this server.
 							</div>
-							<a href="/" className="not-found-link">
+							<Link to="/" className="not-found-link">
 								Go back to the home page
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Redirecting...</title>
+		<script>
+			// Keep one path segment for project pages: /<repo-name>/...
+			const pathSegmentsToKeep = window.location.hostname.endsWith(
+				"github.io"
+			)
+				? 1
+				: 0;
+			const { protocol, hostname, port, pathname, search, hash } =
+				window.location;
+			const origin = `${protocol}//${hostname}${port ? `:${port}` : ""}`;
+			const basePath = pathname
+				.split("/")
+				.slice(0, 1 + pathSegmentsToKeep)
+				.join("/");
+			const routePath = pathname
+				.slice(1)
+				.split("/")
+				.slice(pathSegmentsToKeep)
+				.join("/")
+				.replace(/&/g, "~and~");
+			const normalizedSearch = search
+				? `&${search.slice(1).replace(/&/g, "~and~")}`
+				: "";
+
+			window.location.replace(
+				`${origin}${basePath}/?/${routePath}${normalizedSearch}${hash}`
+			);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -10,31 +10,47 @@ import Logo from "../components/common/logo";
 import INFO from "../data/user";
 import myArticles from "../data/articles";
 import backbtn from "../assets/images/back-button.png"
+import Notfound from "./404";
 
 import "./styles/readArticle.css";
-
-let ArticleStyle = styled.div``;
 
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-	const article = myArticles[slug - 1];
+	const articleId = Number(slug);
+	const articleFactory = Number.isInteger(articleId)
+		? myArticles[articleId - 1]
+		: null;
+	const article = useMemo(
+		() => (articleFactory ? articleFactory() : null),
+		[articleFactory]
+	);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
+	}, [slug]);
+
+	const ArticleStyle = useMemo(() => {
+		if (!article) {
+			return null;
+		}
+
+		return styled.div`
+			${article.style}
+		`;
 	}, [article]);
 
-	ArticleStyle = styled.div`
-		${article().style}
-	`;
+	if (!article || !ArticleStyle) {
+		return <Notfound />;
+	}
 
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
+				<title>{`${article.title} | ${INFO.main.title}`}</title>
+				<meta name="description" content={article.description} />
+				<meta name="keywords" content={article.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -60,16 +76,16 @@ const ReadArticle = () => {
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">
 								<div className="read-article-date">
-									{article().date}
+									{article.date}
 								</div>
 							</div>
 
 							<div className="title read-article-title">
-								{article().title}
+								{article.title}
 							</div>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								<ArticleStyle>{article.body}</ArticleStyle>
 							</div>
 						</div>
 					</div>
