@@ -6,6 +6,7 @@ import Card from "../common/card";
 import "./styles/works.css";
 import behLogo from "../../assets/images/behland.png";
 import kian from "../../assets/images/kian.png";
+import { Link } from "react-router-dom";
 
 const Works = () => {
 	return (
@@ -21,10 +22,16 @@ const Works = () => {
 								alt="Behland"
 								className="work-image"
 							/>
-							<div className="work-title">Behland</div>
+							<div className="work-title">Behland-
+								<Link to="https://beh.land/" className="see-all-link" target="_blank" rel="noopener noreferrer">-https://beh.land/</Link>
+
+							</div>
+
+
 							<div className="work-subtitle">
 								Mid-level Web Developer
 							</div>
+
 							<div className="work-duration">
 								Jan 2024 - Present
 							</div>

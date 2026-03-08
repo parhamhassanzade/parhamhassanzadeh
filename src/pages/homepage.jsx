@@ -159,7 +159,7 @@ const Homepage = () => {
 							<h3 className="">
 								Projects
 							</h3>
-							<AllProjects />
+							<AllProjects limit={3} />
 						</div>
 
 						<div className="homepage-after-title">

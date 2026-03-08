@@ -58,6 +58,23 @@ const INFO = {
 			linkText: "GitHub Profile",
 			link: "https://github.com/parhamhassanzade",
 		},
+		{
+			title: "V2Ray Proxy Performance Analysis",
+			description:
+				"Analyzed the performance of V2Ray proxies under various network conditions, identifying bottlenecks and optimizing configurations for improved throughput and reliability.",
+			logo: logo,
+			linkText: "GitHub Profile",
+			link: "https://github.com/parhamhassanzade",
+		},
+		{
+			title: "Dinamic panel ",
+			description:
+				"Built a dynamic panel for real-time data visualization and monitoring.",
+			linkText: "GitHub Profile",
+			logo: logo,
+
+			link: "https://github.com/parhamhassanzade",
+		},
 	],
 };
 
