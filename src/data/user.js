@@ -67,7 +67,7 @@ const INFO = {
 			link: "https://github.com/parhamhassanzade",
 		},
 		{
-			title: "Dinamic panel ",
+			title: "Dynamic panel ",
 			description:
 				"Built a dynamic panel for real-time data visualization and monitoring.",
 			linkText: "GitHub Profile",
