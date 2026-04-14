@@ -5,20 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
-const getBasename = () => {
-	const publicUrl = process.env.PUBLIC_URL || "";
-	const pathname = publicUrl.replace(/^https?:\/\/[^/]+/i, "");
-	const normalizedPath = pathname.endsWith("/")
-		? pathname.slice(0, -1)
-		: pathname;
-
-	return normalizedPath || "/";
-};
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter basename={getBasename()}>
+		<BrowserRouter>
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>

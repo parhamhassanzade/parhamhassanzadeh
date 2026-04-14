@@ -5,23 +5,6 @@
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
-		<script>
-			(function (location) {
-				if (location.search[1] === "/") {
-					const decoded = location.search
-						.slice(1)
-						.split("&")
-						.map((part) => part.replace(/~and~/g, "&"))
-						.join("?");
-
-					window.history.replaceState(
-						null,
-						"",
-						location.pathname.slice(0, -1) + decoded + location.hash
-					);
-				}
-			})(window.location);
-		</script>
 		<title>Reactfolio</title>
 	</head>
 	<body>
