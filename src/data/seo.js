@@ -2,15 +2,15 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"Parham Hassanzadeh is an M.Sc. AI & Data Science student and mid-level web developer focused on machine learning, data analytics, and scalable web applications.",
-		keywords: ["Parham Hassanzadeh", "AI", "Data Science", "Web Developer"],
+			"Parham Hassanzadeh is an M.Sc. AI & Data Science student focused on data analytics, machine learning, data engineering, and practical analytical systems.",
+		keywords: ["Parham Hassanzadeh", "Data Analytics", "Machine Learning", "Data Engineering"],
 	},
 
 	{
 		page: "about",
 		description:
-			"Background, education, and experience of Parham Hassanzadeh across AI, data science, and full-stack web development.",
-		keywords: ["Parham Hassanzadeh", "Machine Learning", "React", "Django"],
+			"Background, education, and experience of Parham Hassanzadeh across data science, data engineering, BI, and applied AI systems.",
+		keywords: ["Parham Hassanzadeh", "Machine Learning", "Power BI", "Python"],
 	},
 
 	{
@@ -23,15 +23,15 @@ const SEO = [
 	{
 		page: "projects",
 		description:
-			"Selected projects including EU-PARK wait-time prediction, UK housing data warehouse implementation, and Bitcoin volatility analysis.",
+			"Selected projects including EU-PARK analytics, BI and data warehouse engineering, Bitcoin volatility analysis, and an AI voice agent prototype.",
 		keywords: ["Parham Hassanzadeh", "Projects", "XGBoost", "Data Warehouse"],
 	},
 
 	{
 		page: "contact",
 		description:
-			"Contact Parham Hassanzadeh for collaboration in AI, data science, or software development projects.",
-		keywords: ["Parham Hassanzadeh", "Contact", "LinkedIn", "GitHub"],
+			"Contact Parham Hassanzadeh regarding Work Student or Thesis opportunities in Data Science or Data Analytics.",
+		keywords: ["Parham Hassanzadeh", "Contact", "Data Science", "Data Analytics"],
 	},
 ];
 

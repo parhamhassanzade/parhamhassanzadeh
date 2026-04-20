@@ -37,6 +37,46 @@
 	width: 80% !important;
 }
 
+.about-education-section {
+	width: 80%;
+	padding-top: 40px;
+}
+
+.about-section-title {
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.about-education-list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.about-education-item {
+	padding: 20px 24px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.about-education-degree {
+	font-size: 1.05rem;
+	font-weight: 700;
+	padding-bottom: 6px;
+}
+
+.about-education-meta {
+	font-size: 0.95rem;
+	padding-bottom: 4px;
+}
+
+.about-education-details {
+	padding-top: 10px;
+	line-height: 1.6;
+}
+
 .about-left-side {
 	display: flex;
 	flex-direction: column;
@@ -82,6 +122,10 @@
 		padding-top: 20px !important;
 	}
 
+	.about-education-section {
+		width: 100%;
+	}
+
 	.about-left-side {
 		flex-basis: 100%;
 		order: 1;
@@ -113,5 +157,9 @@
 
 	.about-image-container {
 		width: 80%;
+	}
+
+	.about-education-item {
+		padding: 18px;
 	}
 }

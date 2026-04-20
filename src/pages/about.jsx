@@ -8,7 +8,7 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import about from "../assets/images/about.jpg";
+import about from "../assets/images/about.jpeg";
 import "./styles/about.css";
 
 const About = () => {
@@ -47,6 +47,36 @@ const About = () => {
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
+								</div>
+
+								<div className="about-education-section">
+									<div className="about-section-title">
+										Education
+									</div>
+
+									<div className="about-education-list">
+										{INFO.about.education.map((item, index) => (
+											<div
+												className="about-education-item"
+												key={index}
+											>
+												<div className="about-education-degree">
+													{item.degree}
+												</div>
+												<div className="about-education-meta">
+													{item.school}
+												</div>
+												<div className="about-education-meta">
+													{item.period}
+												</div>
+												{item.details && (
+													<div className="about-education-details">
+														{item.details}
+													</div>
+												)}
+											</div>
+										))}
+									</div>
 								</div>
 							</div>
 

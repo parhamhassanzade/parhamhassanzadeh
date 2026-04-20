@@ -5,7 +5,7 @@ const INFO = {
 		title: "Parham Hassanzadeh",
 		name: "Parham Hassanzadeh",
 		email: "parhamhassanzade@gmail.com",
-		phone: "+491782844205",
+		phone: "+49 178 284 4205",
 		location: "Furtwangen, Germany",
 		logo: logo,
 	},
@@ -16,15 +16,29 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "M.Sc. AI & Data Science Student | Mid-level Web Developer",
+		title: "M.Sc. AI & Data Science Student | Data Analytics, ML, and Data Engineering",
 		description:
-			"Current M.Sc. Artificial Intelligence & Data Science student with a strong foundation in machine learning, deep learning, and software development. I build practical products with React/Next.js, Django, and data-driven workflows that improve business performance.",
+			"M.Sc. AI & Data Science student focused on data analytics, machine learning, and data engineering. I build end-to-end data solutions including ETL pipelines, data warehouses, and predictive models on real-world datasets, and I am currently seeking a Work Student or Thesis opportunity in Data Science or Data Analytics.",
 	},
 
 	about: {
-		title: "I'm Parham, based in Germany, building practical AI and web products.",
+		title: "I'm Parham, based in Germany, building practical data and AI systems.",
 		description:
-			"I combine full-stack web development experience with graduate-level AI and data science training. My recent work includes building fintech and management platforms, training machine learning models for forecasting and marketing, and implementing BI/data warehouse pipelines on large datasets. I enjoy turning complex data and business needs into clear, scalable solutions.",
+			"I am currently pursuing an M.Sc. in Artificial Intelligence & Data Science for Digital Business Management at Furtwangen University and previously earned a B.Sc. in Computer Engineering from Kermanshah University of Technology. My work spans predictive modeling, business intelligence, ETL pipelines, and full-stack product development, with hands-on experience in Python, SQL, Power BI, React.js, Django, and OpenAI-powered systems.",
+		education: [
+			{
+				degree: "M.Sc. Artificial Intelligence & Data Science for Digital Business Management",
+				school: "Furtwangen University, Germany",
+				period: "2025 - 2027 (expected)",
+				details:
+					"Relevant coursework: Machine Learning & Applied Statistics, AI & Deep Learning, Business Intelligence for Big Data & MLOps, IT Architectures & Cloud Management, and Business Process Management & Automation.",
+			},
+			{
+				degree: "B.Sc. Computer Engineering",
+				school: "Kermanshah University of Technology, Iran",
+				period: "2022",
+			},
+		],
 	},
 
 	articles: {
@@ -37,26 +51,34 @@ const INFO = {
 		{
 			title: "EU-PARK Analytics Project",
 			description:
-				"Built an XGBoost model for theme park wait-time prediction with +/-1.14 minute error and 94% accuracy, using a pipeline over 130+ Excel files and 2.5 years of operational data.",
+				"Built an end-to-end ML pipeline across 130+ Excel files and 2.5 years of data, training XGBoost and Random Forest models that achieved 94% accuracy with +/-1.14 minute error, a 63% improvement over baseline.",
 			logo: logo,
-			linkText: "GitHub Profile",
-			link: "https://github.com/parhamhassanzade",
+			linkText: "View Project",
+			link: "https://github.com/parhamhassanzade/eu_park",
 		},
 		{
-			title: "UK Housing BI & Data Warehouse",
+			title: "Business Intelligence & Data Warehouse",
 			description:
-				"Implemented a full BI architecture (PSA, DWH, Data Mart) and star schema for 22M+ housing records, including ETL pipelines, data cleansing, and dimensional modeling in MySQL.",
+				"Designed a full BI pipeline from CSV to staging, data warehouse, and data mart using Python, Pandas, MySQL, and Power BI on an e-commerce dataset with 125K+ orders, 181K items, and 29K products.",
 			logo: logo,
-			linkText: "GitHub Profile",
-			link: "https://github.com/parhamhassanzade",
+			linkText: "View Project",
+			link: "https://github.com/parhamhassanzade/BI-project",
 		},
 		{
 			title: "Bitcoin Volatility Analysis (GARCH)",
 			description:
-				"Analyzed BTC-USD volatility with GARCH(1,1), built data pipelines, and interpreted persistence and shock sensitivity to understand crypto market risk behavior.",
+				"Modeled BTC-USD price volatility with GARCH(1,1), building a data pipeline with yfinance, log-return calculation, and statistical analysis to study volatility clustering and persistence in crypto markets.",
 			logo: logo,
-			linkText: "GitHub Profile",
-			link: "https://github.com/parhamhassanzade",
+			linkText: "View Project",
+			link: "https://github.com/parhamhassanzade/Bitcoin-Volatility",
+		},
+		{
+			title: "AI Voice Agent",
+			description:
+				"Built a prototype insurance voice assistant using OpenAI Whisper for speech-to-text, LLM-based intent classification, text-to-speech, session memory, and action routing for multi-step customer workflows.",
+			logo: logo,
+			linkText: "View Project",
+			link: "https://github.com/parhamhassanzade/voice-agent",
 		},
 		{
 			title: "V2Ray Proxy Performance Analysis",

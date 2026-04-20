@@ -29,11 +29,11 @@ const Works = () => {
 
 
 							<div className="work-subtitle">
-								Mid-level Web Developer
+								Mid-level Full-Stack Web Developer
 							</div>
 
 							<div className="work-duration">
-								Jan 2024 - Present
+								Tehran, Iran | Jan 2024 - Feb 2026
 							</div>
 						</div>
 

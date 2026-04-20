@@ -39,15 +39,15 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Selected projects in data science, analytics, and
-							software engineering.
+							Selected projects in data analytics, machine learning,
+							data engineering, and applied AI.
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							These projects focus on practical outcomes: improving
-							forecasting accuracy, building scalable BI/data
-							warehouse pipelines, and applying statistical models
-							to real-world financial data.
+							These projects focus on practical outcomes, from
+							predictive modeling and customer analytics to BI/data
+							warehouse pipelines and LLM-powered workflow
+							prototypes.
 						</div>
 
 						<div className="projects-list">

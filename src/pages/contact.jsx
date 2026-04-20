@@ -44,8 +44,9 @@ const Contact = () => {
 						</div>
 
 						<div className="subtitle contact-subtitle">
-							I'm open to collaboration opportunities in software
-							development, AI, and data science. Reach me at{" "}
+							I'm currently seeking Work Student or Thesis
+							opportunities in Data Science or Data Analytics.
+							Reach me at{" "}
 							<a href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
 							</a>{" "}
